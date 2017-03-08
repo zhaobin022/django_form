@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <a href="{% url 'server_list' %}">server_list</a>
+    <form action="{% url 'server_detail'  server_id %}" method="post">
+
+        {{ form.as_p }}
+        <button type="submit">submit</button>
+    </form>
+</ul>
+</body>
+</html>

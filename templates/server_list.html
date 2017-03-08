@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for server in server_list %}
+        <li>{{ server.name }}--- {{ server.ip_addr }}--<a href="edit-server-{{ server.id }}">EDIT</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

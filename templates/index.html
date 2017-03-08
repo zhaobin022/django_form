@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'index' %}" method="post">
+    {{ form.username.label_tag }}{{ form.username }} {{ form.errors.username.0 }}
+</br>
+     {{ form.password.label }} {{ form.password }} {{ form.errors.password.0 }}
+    </br>
+
+     {{ form.email.label }} {{ form.email }} {{ form.errors.email.0 }}
+    </br>
+
+     {{ form.host_list.label }} {{ form.host_list }} {{ form.errors.host_list.0 }}
+    </br>
+
+     {{ form.host_mul_list.label }} {{ form.host_mul_list }} {{ form.errors.host_mul_list.0 }}
+    </br>
+
+     {{ form.server_name.label }} {{ form.server_name }} {{ form.errors.server_name.0 }}
+    </br>
+    {{ form.errors.all.0 }}
+
+
+
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
